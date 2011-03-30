@@ -1,17 +1,17 @@
-##########
+============
 Presentation
-##########
-==simple_project== folder here, is a django project. This project has no practical use, it's for learning purpose only.
+============
+simple_project folder here, is a django project. This project has no practical use, it's for learning purpose only.
 
 
-##########
+*******
 Documentation
-##########
+*******
 to do...
 
-##########
+*******
 Getting Help
-##########
+*******
 Please head over to django's IRC channel, #django, on irc.freenode.net
 
 *******
