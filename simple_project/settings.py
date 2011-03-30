@@ -9,6 +9,8 @@ PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 sys.path.append(os.path.join(PROJECT_PATH, 'apps/'))
 
+_ = lambda s: s
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -48,11 +50,17 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/Rome'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'it'
+
+# A tuple of all available languages.
+LANGUAGES = (
+    ('en', _('English')),
+    ('it', _('Italian')),
+)
 
 SITE_ID = 1
 
