@@ -13,10 +13,22 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Darii Denis', 'info@ddenis.com'),
+    ('Darii Denis', 'email@example.com'),
 )
 
 MANAGERS = ADMINS
+
+# START email configuration #
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'example@gmail.com' # put your gmail email
+EMAIL_HOST_PASSWORD = 'exampleGmailPassword' # put your gmail password
+EMAIL_PORT = 587
+
+EMAIL_SUBJECT_PREFIX = '[Simple Project] ' # personalize this prefix
+
+SEND_BROKEN_LINK_EMAILS = False
+# END email configuration #
 
 DATABASES = {
     'default': {
