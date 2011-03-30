@@ -1,10 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 # Django settings for simple_project project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+    ('Darii Denis', 'info@ddenis.com'),
 )
 
 MANAGERS = ADMINS
