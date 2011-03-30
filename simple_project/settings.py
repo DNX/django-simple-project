@@ -54,7 +54,7 @@ TIME_ZONE = 'Europe/Rome'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'it'
+LANGUAGE_CODE = 'en'
 
 # A tuple of all available languages.
 LANGUAGES = (
@@ -141,8 +141,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
 )
 
 # A sample logging configuration. The only tangible logging
