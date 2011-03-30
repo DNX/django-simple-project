@@ -7,6 +7,8 @@ import os, sys
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
+sys.path.append(os.path.join(PROJECT_PATH, 'apps/'))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
