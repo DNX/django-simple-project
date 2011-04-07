@@ -1,0 +1,95 @@
+{% load i18n %}
+{% block base %}
+{% block doctype %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">{% endblock doctype %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% block head %}
+<head>
+	{% block meta %}
+	<meta http-equiv="content-type" content="{% block meta.content-type %}text/html;{% endblock meta.content-type %}" />
+	<meta name="description" content="{% block meta.description %}{% endblock meta.description %}" />
+	<meta name="keywords" content="{% block meta.keywords %}{% endblock meta.keywords %}" />
+	{% endblock meta %}
+	
+    <title>{% block title %}{% endblock title %}</title>
+	<link rel="icon" href="{{ MEDIA_URL }}images/favicon.ico" />
+	
+	{% block css %}
+	{% block css.shared %}
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/base.css" />
+	{% endblock css.shared %}
+	{% block css.custom %}{% endblock css.custom %}
+	{% endblock css%}
+	
+	{% block js %}
+	{% block js.shared %}
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.min.js"></script>
+	{% endblock js.shared %}
+	{% block js.custom %}{% endblock js.custom %}
+	{% endblock js%}
+</head>
+{% endblock head %}
+
+<body {% block bodyonload %}{% endblock bodyonload %}>
+    <div id="dsp_container">
+		{% block header %}
+		<!-- BEGIN header -->
+        <div id="dsp_hd">
+        	<div class="dsp_logo">
+        		<h1>
+        			<a title="Django Simple Project" href="#"><span>Django Simple Project</span></a>
+        		</h1>
+        	</div>
+        	<div id="dsp_menu">
+	            <ul>
+	                <li class="active"><a href="#home">Home</a></li>
+	                <li><a href="#aboutus">About Us</a></li>
+	                <li><a href="#news">News</a></li>
+	                <li><a href="#portfolio">Portfolio</a></li>
+	                <li class="last"><a href="#contactus">Contact Us</a></li>
+	            </ul>    	
+        	</div>
+        	<div id="site_title">
+	        	<h1><a href="/">DSP<span> on-line portal...</span></a></h1>
+	            <div id="languages_container">
+					<ul id="lang_selector">
+						<li class=""><a class="en" href="/en/"></a></li>
+						<li class=""><a class="it" href="/it/"></a></li>
+					</ul>
+				</div>
+        	</div>
+            {% block header_content %}{% endblock header_content %}
+        </div>
+        <!-- END header -->
+		{% endblock header %}
+		
+		{% block body %}
+        <!-- BEGIN body -->
+        <div id="dsp_bd" class="content">
+            {% block content %}{% endblock content %}
+        </div>
+        <!-- END body -->
+		{% endblock body %}
+		
+		{% block footer %}
+		<!-- BEGIN footer -->
+        <div id="dsp_ft">
+        	Copyright &copy; 1998 - 2011 <a href="#">DSP</a> | Powered by <a target="_parent" href="http://www.ddenis.com">Darii Denis</a> | Designed by <a target="_parent" href="http://www.ddenis.com">Plesco Natalia</a>
+            {% block footer_content %}{% endblock footer_content %}
+        </div>
+        <!-- END footer -->
+		{% endblock footer %}
+    </div>
+    {% block ft_js %}
+    	<script type="text/javascript">
+			$(document).ready(function() 
+			    { 
+			        // do something
+			    }
+			);
+		</script>
+		{% block ft_js.custom %}
+		{% endblock ft_js.custom %}
+    {% endblock ft_js %}
+</body>
+</html>
+{% endblock base %}
