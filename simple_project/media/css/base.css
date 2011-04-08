@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+html, body, div, p, ul, li, a, img, h1, h2, h3, h4, h5, h6, small, a img, span, form, cite, iframe
+{
+     margin:0;
+	 border:0;
+	 padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-weight: normal;
+}
+
+html, input, textarea
+{
+	line-height: 23px;
+}
+
+input, textarea
+{
+	-moz-border-radius:6px 6px 6px 6px;
+	background:none repeat scroll 0 0 #F8F8F8;
+	border:2px solid #C6C6C6;
+	font-size:15px;
+	margin:3px;
+	font-size:17px;
+	color:#585858;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size:16px !important;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    word-spacing:0px;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+a
+{
+    text-decoration:none;
+}
+
+#dsp_bd ul
+{
+    list-style: none outside none;
+    margin: 20px 0 20px 10px;
+    padding: 0;
+}
+
+#dsp_bd ul li {
+    color: #68992A;
+    margin: 0;
+    padding: 0 0 5px 20px;
+}
+
+p
+{
+   margin:0 10px 0 10px;
+}
+
+img
+{
+	margin:10px;
+}
+
+img.right
+{
+	clear: right;
+    float: right;
+}
+
+img.left
+{
+	clear: left;
+    float: left;
+}
+
+img.right, img.left, img.center
+{
+	background-color: #F7F7F7;
+    border: 1px solid #6A604F;
+    color: #666666;
+    padding: 5px;
+    margin: 8px 8px;
+}
+
+.bx_hide
+{
+	display: none; /* we show this element with jQuery script at the last moment, after load */
+}
+
+#dsp_container
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 978px;
+}
+
+#dsp_hd
+{
+    height: 120px;
+    padding: 18px 0 21px;
+}
+
+.dsp_logo
+{
+	background-image: url("/media/images/rule_header.gif");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0 0 18px;
+}
+
+.dsp_logo h1{
+	background: url("/media/images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 1px;
+    height: 74px;
+    margin: 0 auto;
+    width: 195px;
+}
+
+.dsp_logo h1 a{
+	background: url("/media/images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 35px;
+    outline: medium none;
+    width: 291px;
+}
+
+.dsp_logo a{
+	visibility: hidden;
+}
+
+
+#dsp_menu
+{
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 4px 0 6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#dsp_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#dsp_menu ul li {
+    display: inline-block;
+    margin: 0 0 0 3px;
+}
+
+#dsp_menu ul li.active {
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 7px 6px 6px 8px;
+    width: 104px;
+}
+
+#dsp_menu ul li a {
+    color: #333333;
+}
+
+#dsp_menu ul li.active a {
+    color: #FFFFFF;
+}
+
+#dsp_menu ul li a:hover, #dsp_menu ul .current {
+    color: #000000;
+    height: 34px;
+    padding-top: 6px;
+}
+
+.dot
+{
+	color: #FF0000;
+    padding: 0;
+    position: relative;
+    top: -0.3em;
+    vertical-align: baseline;
+}
+
+#site_title
+{
+    clear: both;
+    height: 40px;
+    padding: 30px 20px;
+    margin: 0;
+}
+
+#site_title h1 {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+
+#site_title h1 a {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 400;
+    outline: medium none;
+}
+
+#site_title h1 a span {
+    font-size: 14px;
+}
+
+#dsp_bd.content {
+    clear: both;
+    padding: 10px 10px 0;
+}
+
+h1.title {
+    border-bottom: 1px solid #626335;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 5px 0 10px;
+}
+
+.col_w200 {
+    width: 200px;
+}
+
+.col_w560 {
+    width: 560px;
+}
+
+.col_w340 {
+    width: 340px;
+}
+
+.float_l {
+    float: left;
+}
+
+.float_r {
+    float: right;
+}
+
+.h30 {
+    height: 30px;
+}
+
+.cleaner {
+    clear: both;
+}
+
+a.gototop {
+    clear: both;
+    display: block;
+    float: right;
+    height: 20px;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#dsp_ft {
+    clear: both;
+    color: #E5EFC8;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#dsp_ft a {
+    color: #FFFFFF;
+}
+
+.submit
+{
+	border:2px solid #339900;
+	padding:4px;
+	margin:5px 30px;
+}
+
+.cancel
+{
+	border:2px solid #CC0033;
+	padding:4px;
+	margin:5px 30px;
+}
+
+.errorlist
+{
+	color:#C80000;
+	font-size:12px;
+}
+
+div.content
+{
+	text-align: left;
+}
+
+.title
+{
+	margin: 20px 30px;
+}
