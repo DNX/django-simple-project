@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from django.views.generic.simple import direct_to_template
 
 from django.contrib import admin
 admin.autodiscover()
@@ -14,5 +15,5 @@ urlpatterns = patterns('',
     # enable the admin:
     (r'^admin/', include(admin.site.urls)),
     
-    (r'^$', "core.views.index"),
+    url(r'^$', direct_to_template, {'template':'home.html',}, name='home'),
 )
