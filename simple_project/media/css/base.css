@@ -98,6 +98,11 @@ img.right, img.left, img.center
 	display: none; /* we show this element with jQuery script at the last moment, after load */
 }
 
+.dialog_popup {
+	min-width: 250px;
+	min-height: 250px;
+}
+
 #dsp_container
 {
     margin: 0 auto;

@@ -8,7 +8,7 @@ simple_project folder here, is a django project. This project has no practical u
 Documentation
 *******
 go here: 
-  `wiki <https://github.com/darii-denis/django-simple-project/wiki/_pages>`_.
+  `wiki <https://github.com/DNX/django-simple-project/wiki/_pages>`_.
 
 *******
 Getting Help
