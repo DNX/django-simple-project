@@ -1,5 +1,14 @@
 You can find this HELP on-line here: https://github.com/DNX/django-simple-project/wiki
 
-# TITLE
+# Generate a random password
+You can find this piece of code in real project here: [simple_project](https://github.com/DNX/django-simple-project/blob/master/simple_project/)
 
-content
+All needed modifications you can find in this commit: 
+1. [1e3c24ea...](https://github.com/DNX/django-simple-project/commit/1e3c24eafe3a914c28cb49f0d764f0e264264d83)
+
+Put this code in your _.py_ file:
+```python
+def gen_passwd(length=8, chars=string.letters + string.digits):
+    return ''.join([choice(chars) for i in range(length)])
+```
+
